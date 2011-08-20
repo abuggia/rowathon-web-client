@@ -327,8 +327,6 @@ body {
 
 /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
 
-.clearfix:before,
-.clearfix:after,
 .container_12:before,
 .container_12:after {
   content: '.';
@@ -341,7 +339,6 @@ body {
   height: 0;
 }
 
-.clearfix:after,
 .container_12:after {
   clear: both;
 }
@@ -351,7 +348,6 @@ body {
   Move to separate stylesheet if invalid CSS is a problem.
 */
 
-.clearfix,
 .container_12 {
   zoom: 1;
 }

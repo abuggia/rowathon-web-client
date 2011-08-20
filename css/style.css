@@ -215,7 +215,31 @@ td { vertical-align: top; }
 
 
 
+body {
+ font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+ font-family: 'Cabin', sans-serif;
+}
 
+nav {
+  background-color:#7EA9C7;
+}
+
+nav ul {
+  float:right;
+}
+
+nav ul li {
+ display: inline;
+ height: 16px;
+ color: white;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display:inline-block;
+  margin: 2px 16px 2px 8px;
+}
 
 
 
