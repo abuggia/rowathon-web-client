@@ -215,12 +215,37 @@ td { vertical-align: top; }
 
 
 
+
+
 body {
  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
  font-family: 'Cabin', sans-serif;
 }
 
+/* original: width=480, height=217 */
+#logo {
+  float:left;
+  width:335px;
+  position:relative;
+  z-index:10;
+}
+
+.tagline {
+  float:left;
+  color:#7EA9C7;
+  position:relative;
+  top:20px;
+}
+
+.affiliates {
+  float:right;
+  position:relative;
+  top:18px;
+}
+
 nav {
+  position:relative;
+  top:-86px;
   background-color:#7EA9C7;
 }
 
@@ -228,23 +253,21 @@ nav ul {
   float:right;
 }
 
-nav ul li {
+nav li {
  display: inline;
- height: 16px;
- color: white;
 }
 
-nav ul li a {
+nav a {
   color: #fff;
   text-decoration: none;
   display:inline-block;
-  margin: 2px 16px 2px 8px;
+  margin: 2px 20px 2px 8px;
+  line-height:34px;
 }
 
-
-
-
-
+nav a:hover {
+ color:#eee;
+}
 
 
 
