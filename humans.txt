@@ -4,4 +4,6 @@
   Twitter: @abuggia
   Location: Cambridge, MA
 
+  Programmer: Mike Axiak KB1KGW
+  Location: 37.0625, -95.677068
 
