@@ -6,5 +6,6 @@
 
   Designer: Aimee
 
-
+  Programmer: Mike Axiak KB1KGW
+  Location: 37.0625, -95.677068
 
