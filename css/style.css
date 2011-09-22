@@ -225,7 +225,8 @@ body {
 /* original: width=480, height=217 */
 #logo {
   float:left;
-  width:335px;
+  padding-left:15px;
+  width:216px;
   position:relative;
   z-index:10;
 }
@@ -234,7 +235,7 @@ body {
   float:left;
   color:#7EA9C7;
   position:relative;
-  top:20px;
+  top:40px;
 }
 
 .affiliates {
@@ -245,7 +246,7 @@ body {
 
 nav {
   position:relative;
-  top:-86px;
+  top:-150px;
   background-color:#7EA9C7;
 }
 

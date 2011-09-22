@@ -4,4 +4,10 @@
   Twitter: @abuggia
   Location: Cambridge, MA
 
+  Designer: Aimee B.
+  Twitter: @_aimeeb
+  Location: Cambridge, MA
+
+  Programmer: Mike Axiak KB1KGW
+  Location: 37.0625, -95.677068
 
