@@ -339,29 +339,3 @@ nav a:hover {
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
-/* Aimee's added styles */
-#main {
-position:relative;
-top:-150px;
-}
-.date {<h2>Last year we raised $30,000</h2>
-  			<h1>Crunchtime Rowathon is a
-float:left;
-color:#F7941E;
-padding-left:2%;
-font-size:220%;
-font-weight:normal;
-margin:0;
-width:20%;
-}
-#submitEmail {
-float:left;
-width:100%;
-}
-
-}
-#container {
-float:right;
-width:90%;
-
-}
