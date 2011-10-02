@@ -7,6 +7,79 @@
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>CrunchTime! Rowathon 2012</title>
+		
+		<link rel="stylesheet" href="css/global.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+		
+		
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+	
+				// Tabs
+				$('#tabs').tabs();
+				
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); }, 
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+				
+			});
+		</script>
+	
+		<style type="text/css">
+			/*demo page css*/
+			body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
+			.demoHeaders { margin-top: 2em; }
+			#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+			#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+			ul#icons {margin: 0; padding: 0;}
+			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+			ul#icons span.ui-icon {float: left; margin: 0 4px;}
+		</style>	
+		
   <meta charset="utf-8">
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.  More info: h5bp.com/b/378 -->
@@ -34,11 +107,13 @@
 <body>
   <header class="container_12">
     <img src="img/ctLogoIcon.png" id="logo">
-    <hgroup class="tagline"><h3>For a great cause.  &nbsp;For fun.<h3></hgroup>
+    <hgroup class="tagline">
+    <h3>For a great cause.  &nbsp;For fun.<h3></hgroup>
     <div class="affiliates">
       <a href="http://www.crunchtime.com"><img src="img/CrunchTime_Logo.gif" alt="CrunchTime! Information Systems" style="width:80px;height:50px"/></a>
       <a href="http://www.childrenshospital.org"><img src="img/ChildrensHospitalBoston.png" alt="Children's Hospital Boston" style="width:120px"/></a>
     </div>
+    <h2 class="date">April 2012</h2>
   </header>
 
   <nav class="container_12">
@@ -49,12 +124,91 @@
       <li><a href="#">donate</a></li>
     </ul>
   </nav>
+  
 
-  <div id="main" role="main">
+  <div id="main" role="main" class="container_12">
+  	      	
+  	    
+  	    
+  	<section id="topSection">
+  		<div id="containerSlideshow">
+		<div id="example">
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/jliba/4665625073/" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+						<div class="caption" style="bottom:0">
+							<p>Happy Bokeh Thursday!</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/stephangeyer/3020487807/" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+						<div class="caption">
+							<p>Taxi</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/childofwar/2984345060/" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+						<div class="caption">
+							<p>Happy Bokeh raining Day</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/b-tal/117037943/" title="We Eat Light | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-4.jpg" width="570" height="270" alt="Slide 4"></a>
+						<div class="caption">
+							<p>We Eat Light</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/bu7amd/3447416780/" title="&ldquo;I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.&rdquo; | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-5.jpg" width="570" height="270" alt="Slide 5"></a>
+						<div class="caption">
+							<p>&ldquo;I must go down to the sea again, to the lonely sea and the sky...&rdquo;</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/streetpreacher/2078765853/" title="twelve.inch | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-6.jpg" width="570" height="270" alt="Slide 6"></a>
+						<div class="caption">
+							<p>twelve.inch</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/aftab/3152515428/" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+						<div class="caption">
+							<p>Save my love for loneliness</p>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			<img src="img/example-frame.png" alt="Example Frame" id="frame">
+		</div>
+		</div>
+		</div>
+		
+		<article id="submitEmail"></article>
+		
+  	</section>
+  	
+  	<section id="content" class="container_12">
+  		<!-- Tabs -->
+		<h2 class="demoHeaders">Welcome</h2>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">About</a></li>
+				<li><a href="#tabs-2">2011</a></li>
+				<li><a href="#tabs-3">2010</a></li>
+			</ul>
+			<article id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</article>
+			<article id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</article>
+			<article id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</article>
+		</div>
+  	</section>
+  	
 
   </div>
 
-  <footer>
+  <footer>	
 
   </footer>
 
