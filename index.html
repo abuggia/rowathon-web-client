@@ -9,12 +9,13 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>CrunchTime! Rowathon 2012</title>
-	<script src="js/prototype.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/slideshow.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" src="js/slideshow.js"></script>
+	
 	<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
-		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		
 		<script type="text/javascript">
 			$(function(){
 	
@@ -28,8 +29,45 @@
 				);
 				
 			});
+			
+			$(".main_image .desc").show(); //Show Banner
+			$(".main_image .block").animate({ opacity: 0.85 }, 1 ); //Set Opacity
+		
+			$(".image_thumb ul li:first").addClass('active'); //Add the active class (highlights the very first list item by default)
+			$(".image_thumb ul li").click(function(){
+				//Set Variables
+				var imgAlt = $(this).find('img').attr("alt"); //Get Alt Tag of Image
+				var imgTitle = $(this).find('a').attr("href"); //Get Main Image URL
+				var imgDesc = $(this).find('.block').html();  //Get HTML of the "block" container
+				var imgDescHeight = $(".main_image").find('.block').height(); //Find the height of the "block"
+		
+			if ($(this).is(".active")) {  //If the list item is active/selected, then...
+				return false; // Don't click through - Prevents repetitive animations on active/selected list-item
+			} else { //If not active then...
+				//Animate the Description
+				$(".main_image .block").animate({ opacity: 0, marginBottom: -imgDescHeight }, 250 , function() { //Pull the block down (negative bottom margin of its own height)
+					$(".main_image .block").html(imgDesc).animate({ opacity: 0.85,  marginBottom: "0" }, 250 ); //swap the html of the block, then pull the block container back up and set opacity
+					$(".main_image img").attr({ src: imgTitle , alt: imgAlt}); //Switch the main image (URL + alt tag)
+				});
+			}
+			//Show active list-item
+			$(".image_thumb ul li").removeClass('active'); //Remove class of 'active' on all list-items
+			$(this).addClass('active');  //Add class of 'active' on the selected list
+			return false;
+
+			}) .hover(function(){ //Hover effects on list-item
+				$(this).addClass('hover'); //Add class "hover" on hover
+				}, function() {
+				$(this).removeClass('hover'); //Remove class "hover" on hover out
+			});
+			
+			$("a.collapse").click(function(){
+				$(".main_banner .block").slideToggle(); //Toggle the description (slide up and down)
+				$("a.collapse").toggleClass("show"); //Toggle the class name of "show" (the hide/show tab)
+			});
 		</script>
-		<style type="text/css">
+		
+	<style type="text/css">
 			/*demo page css*/
 			body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
 			.demoHeaders { margin-top: 2em; }
@@ -39,13 +77,6 @@
 			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
 			ul#icons span.ui-icon {float: left; margin: 0 4px;}
 		</style>	
-	
-	<style type="text/css" media="screen">
-		@import url(css/slideshow.css);
-		</style>
-	
-	
-		
   <meta charset="utf-8">
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.  More info: h5bp.com/b/378 -->
@@ -97,31 +128,42 @@
   	      	
   	    
   	    
-  	<section id="topSection">
+<section id="topSection">
 	
-	<div id="timer" class="slideshow">
-		<ul id="timer-ul">
-			<li>
-				<img src="images/horse.jpg" width="400" height="300" alt="Rocking horse">
-			</li>
-			<li>
-				<img src="images/metro.jpg" width="400" height="300" alt="WMATA Metro Interior">
-			</li>
-			<li>
-				<img src="images/panda.jpg" width="400" height="300" alt="Panda (Taken at the Washington DC National Zoo)">
-			</li>
-		</ul>
+<div id="slideshow">
+
+	<div class="main_image">
+    	<img src="img/slide.jpg" alt="" />
+    	<div class="desc">
+       		<a href="#" class="collapse">Close Me!</a>
+        		<div class="block">
+            		<h2>Title</h2>
+            		<small>Date</small>
+            		<p>Copy</p>
+        		</div>
+    	</div>
+    </div>
+    
+    <div class="image_thumb">
+    	<ul>
+        	<li>
+            <a href="slide.jpg"><img src="#" alt="Image Name" /></a>
+            <div class="block">
+                <h2>Title</h2>
+                <small>Date</small>
+                <p>Copy</p>
+            </div>
+       		</li>
+    	</ul>
 	</div>
-	<script type="text/javascript" charset="utf-8">
-		var auto = new Slideshow('timer');
-		auto.description_template = "Image #{number} of #{total} - #{description}<br><small>(The slideshow will advance automatically)</small>";
-		auto.auto_play = true;
-		auto.create();
-	</script>
-		<article id="submitEmail"></article>
-  	</section>
+	
+</div>
+
+</div>
+	
+</section>
   	
-  	<section id="content" class="container_12">
+  	<section id="contentSection" class="container_12">
   		<!-- Tabs -->
 		<h2 class="demoHeaders">Welcome</h2>
 		<div id="tabs">
@@ -134,11 +176,11 @@
 			<article id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</article>
 			<article id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</article>
 		</div>
+	
   	</section>
   	
 	
   </div>
-
   <footer>	
 
   </footer>
