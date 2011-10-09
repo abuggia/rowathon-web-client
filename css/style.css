@@ -348,7 +348,7 @@ top:-200px;
 .date {<h2>Last year we raised $30,000</h2>
   			<h1>Crunchtime Rowathon is a
 float:left;
-color:#F7941E;
+color:#FBB040;
 padding-left:2%;
 font-size:220%;
 font-weight:normal;
@@ -359,9 +359,62 @@ h2.date {
 font-size: 1.9em;
 margin-left: .25em;
 }
+#email-entry {
+float:right;
+clear:both;
+width:78%;
+margin-top: 10px;
+}
+#email-entry img {
+float:left;
+margin-right:20px;
+margin-left:20px;
+}
+#email-entry form {
+float:left;
+background-color: #FBB040;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; /* future proofing */
+-khtml-border-radius: 10px; /* for old Konqueror browsers */
+margin-left:20px;
+height:75px;
+width:630px;
+margin-top:15px;
+}
+#email-entry h2 {
+width:160px;
+float:left;
+font-size: 130%;
+padding:10px;
+padding-left: 30px;
+}
+#email-entry ul {
+width:630px;
+height:75px;
+list-style-type: none;
+margin:0px;
+padding:0px;
+}
+#email-entry li {
+float:left;
+padding: 10px;
+padding-left:15px;
+}
+#email-entry li.buttons {
+margin-top:20px;
+}
+#Field1 {
+width:270px;
+}
+#saveForm {
+width:80px;
+}
 #contentSection {
 width:inherit;
 clear:both;
+float:right;
+margin-top: -100px;
 }
 /* ==|== CSS for slideshow ========================================
    ========================================================================== */
@@ -373,7 +426,7 @@ clear:both;
 	SLIDER
 */
 .slider-wrap	{ 
-width: 610px; 
+width: 630px; 
 float: right; 
 }			
 .stripViewer .panelContainer .panel ul	{ 
@@ -383,8 +436,8 @@ margin: 0 15px 0 30px;
 .stripViewer { 
 position: relative; 
 overflow: hidden; 
-width: 610px; 
-height: 285px; 
+width: 630px;  
+height: 250px; 
 }
 .stripViewer .panelContainer { 
 position: relative; 
@@ -395,7 +448,7 @@ top: 0;
 float: left; 
 height: 100%; 
 position: relative; 
-width: 610px; 
+width: 630px; 
 }
 .stripNavL, .stripNavR, .stripNav { 
 display: none; 
