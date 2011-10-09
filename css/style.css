@@ -219,7 +219,7 @@ td { vertical-align: top; }
 
 body {
  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
- font-family: 'Cabin', sans-serif;
+ font-family: 'helvetica', sans-serif;
 }
 
 /* original: width=480, height=217 */
@@ -355,105 +355,133 @@ font-weight:normal;
 margin:0;
 width:20%;
 }
+h2.date {
+font-size: 1.9em;
+margin-left: .25em;
+}
+#contentSection {
+width:inherit;
+clear:both;
+}
 /* ==|== CSS for slideshow ========================================
    ========================================================================== */
-.main_image {
-    width: 610px;
-    height: 300px;
-    background: #333;
-    position: relative;
-    overflow: hidden; /*--Overflow hidden allows the description to toggle/tuck away as it slides down--*/
-    color: #fff;
-    float:right;
+/*
+	Featured Content Slider
+	by: Chris Coyier
+
+/*
+	SLIDER
+*/
+.slider-wrap	{ 
+width: 610px; 
+float: right; 
+}			
+.stripViewer .panelContainer .panel ul	{ 
+text-align: left; 
+margin: 0 15px 0 30px; 
 }
-.main_image h2 {
-    font-size: 2em;
-    font-weight: normal;
-    margin: 0 0 5px;
-    padding: 10px;
+.stripViewer { 
+position: relative; 
+overflow: hidden; 
+width: 610px; 
+height: 285px; 
 }
-.main_image p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    padding: 10px;
-    margin: 0;
+.stripViewer .panelContainer { 
+position: relative; 
+left: 0; 
+top: 0; 
 }
-.block small { /*--We'll be using this same style on our thumbnail list--*/
-    font-size: 1em;
-    padding: 0 0 0 20px;
-    background: url(icon_calendar.gif) no-repeat 0 center;
+.stripViewer .panelContainer .panel { 
+float: left; 
+height: 100%; 
+position: relative; 
+width: 610px; 
 }
-.main_image .block small {margin-left: 10px;}
-.main_image .desc{
-    position: absolute;
-    bottom: 0;
-    left: 0; /*--Stick the desc class to the bottom of our main image container--*/
-    width: 100%;
-    display: none; /*--Hide description by default, if js is enabled, we will show this--*/
+.stripNavL, .stripNavR, .stripNav { 
+display: none; 
 }
-.main_image .block{
-    width: 100%;
-    background: #111;
-    border-top: 1px solid #000;
+.nav-thumb 									
+{ border: 1px solid black;  
 }
-.main_image a.collapse { /*--This is our hide/show tab--*/
-    background: url(btn_collapse.gif) no-repeat left top;
-    height: 27px;
-    width: 93px;
-    text-indent: -99999px;
-    position: absolute;
-    top: -27px;
-    right: 20px;
+#movers-row	{ 
+margin: -43px 0 0 62px; 
 }
-.main_image a.show {background-position: left bottom;
+#movers-row div { 
+width: 20%; 
+float:left;
+margin-top: -36px;
+}
+#movers-row div a.cross-link { 
+float: right; 
+}
+.photo-meta-data { 
+background: url(images/transpBlack.png); 
+padding: 10px; 
+height: 30px; 
+margin-top: -50px; 
+position: relative; 
+z-index: 9999; 
+color: white; 
+}
+.photo-meta-data span { 
+font-size: 13px; 
+}
+.cross-link { 
+display: block; 
+width: 75px; 
+margin-top: -14px; 
+position: relative; 
+padding-top: 15px; 
+z-index: 9999; 
+}
+.active-thumb { 
+background: transparent url(images/icon-uparrowsmallwhite.png) top center no-repeat; 
 }
 
-.image_thumb {
-    float: right;
-    width: 100px;
-    background: #f0f0f0;
-    border-right: 1px solid #fff;
-    border-top: 1px solid #ccc;
+
+
+/* ==|== CSS for tabs ========================================
+   ========================================================================== */
+
+.tabs {
+  position: relative;
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
 }
-.image_thumb img {
-    border: 1px solid #ccc;
-    padding: 5px;
-    background: #fff;
-    float: right;
+.tab {
+  float: left;
 }
-.image_thumb ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.tab label {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
 }
-.image_thumb ul li{
-    margin: 0;
-    padding: 12px 10px;
-    background: #f0f0f0 url(nav_a.gif) repeat-x;
-    width: 279px;
-    float: left;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #ccc;
+.tab [type=radio] {
+  display: none;
 }
-.image_thumb ul li.hover { /*--Hover State--*/
-    background: #ddd;
-    cursor: pointer;
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
-.image_thumb ul li.active { /*--Active State--*/
-    background: #fff;
-    cursor: default;
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
 }
-html .image_thumb ul li h2 {
-    font-size: 1.5em;
-    margin: 5px 0;
-    padding: 0;
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
 }
-.image_thumb ul li .block {
-    float: right;
-    margin-left: 10px;
-    padding: 0;
-    width: 170px;
-}
-.image_thumb ul li p{display: none;}/*--Hide the description on the list items--*/
+
+
+
 
