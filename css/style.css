@@ -457,12 +457,11 @@ display: none;
 { border: 1px solid black;  
 }
 #movers-row	{ 
-margin: -43px 0 0 62px; 
+margin-top:5px; 
 }
 #movers-row div { 
-width: 20%; 
-float:left;
-margin-top: -36px;
+width: 13%; 
+float:right;
 }
 #movers-row div a.cross-link { 
 float: right; 
