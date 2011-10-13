@@ -34,20 +34,11 @@ audio:not([controls]) { display: none; }
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { margin: 0; font-size: 13px; line-height: 1.231; }
-
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate
  * Also: hot pink! (or customize the background color to match your design)
- */
-
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
-
-/* =============================================================================
+ *//* =============================================================================
    Links
    ========================================================================== */
 
@@ -95,6 +86,99 @@ sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
 
+@font-face {
+    font-family: 'CicleFina';
+    src: url('fonts/Cicle_Fina-webfont.eot');
+    src: url('fonts/Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cicle_Fina-webfont.woff') format('woff'),
+         url('fonts/Cicle_Fina-webfont.ttf') format('truetype'),
+         url('fonts/Cicle_Fina-webfont.svg#CicleFina') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CicleFinaItalic';
+    src: url('fonts/Cicle_Fina_Italic-webfont.eot');
+    src: url('fonts/Cicle_Fina_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cicle_Fina_Italic-webfont.woff') format('woff'),
+         url('fonts/Cicle_Fina_Italic-webfont.ttf') format('truetype'),
+         url('fonts/Cicle_Fina_Italic-webfont.svg#CicleFinaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CicleGordita';
+    src: url('fonts/Cicle_Gordita-webfont.eot');
+    src: url('fonts/Cicle_Gordita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cicle_Gordita-webfont.woff') format('woff'),
+         url('fonts/Cicle_Gordita-webfont.ttf') format('truetype'),
+         url('fonts/Cicle_Gordita-webfont.svg#CicleGordita') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CicleGorditaItalic';
+    src: url('fonts/Cicle_Gordita_Italic-webfont.eot');
+    src: url('fonts/Cicle_Gordita_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cicle_Gordita_Italic-webfont.woff') format('woff'),
+         url('fonts/Cicle_Gordita_Italic-webfont.ttf') format('truetype'),
+         url('fonts/Cicle_Gordita_Italic-webfont.svg#CicleGorditaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CicleSemi';
+    src: url('fonts/Cicle_Semi-webfont.eot');
+    src: url('fonts/Cicle_Semi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cicle_Semi-webfont.woff') format('woff'),
+         url('fonts/Cicle_Semi-webfont.ttf') format('truetype'),
+         url('fonts/Cicle_Semi-webfont.svg#CicleSemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CicleSemiItalic';
+    src: url('fonts/Cicle_Semi_Italic-webfont.eot');
+    src: url('fonts/Cicle_Semi_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cicle_Semi_Italic-webfont.woff') format('woff'),
+         url('fonts/Cicle_Semi_Italic-webfont.ttf') format('truetype'),
+         url('fonts/Cicle_Semi_Italic-webfont.svg#CicleSemiItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CicleShadow';
+    src: url('fonts/Cicle_Shadow-webfont.eot');
+    src: url('fonts/Cicle_Shadow-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cicle_Shadow-webfont.woff') format('woff'),
+         url('fonts/Cicle_Shadow-webfont.ttf') format('truetype'),
+         url('fonts/Cicle_Shadow-webfont.svg#CicleShadow') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1.fontface {font: 45px/52px 'CicleGordita', Arial, sans-serif;letter-spacing: 0;color:#f8961f}
+
+		p.style1 {font: 18px/27px 'CicleFina', Arial, sans-serif;}
+		p.style2 {font: 18px/27px 'CicleFinaItalic', Arial, sans-serif;}
+		p.style3 {font: 18px/27px 'CicleGordita', Arial, sans-serif;}
+		p.style4 {font: 18px/27px 'CicleGorditaItalic', Arial, sans-serif;}
+		p.style5 {font: 18px/27px 'CicleSemi', Arial, sans-serif;}
+		p.style6 {font: 18px/27px 'CicleSemiItalic', Arial, sans-serif;}
+		p.style7 {font: 18px/27px 'CicleShadow', Arial, sans-serif;}
+		
 /* =============================================================================
    Lists
    ========================================================================== */
@@ -212,209 +296,109 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
-
-
-
-
-
 body {
- font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
- font-family: 'helvetica', sans-serif;
+ font: 18px/27px 'CicleFina', Arial, sans-serif;
+background:url("img/background.jpg");
+background-repeat: repeat-x;
 }
-
-/* original: width=480, height=217 */
-#logo {
-  float:left;
-  padding-left:15px;
-  width:216px;
-  position:relative;
-  z-index:10;
+h3 {
+font: 16px/22px 'CicleSemiItalic', Arial, sans-serif;
 }
-
-.tagline {
-  float:left;
-  color:#7EA9C7;
-  position:relative;
-  top:40px;
+h1 {
+margin-bottom:0px;
 }
-
 .affiliates {
-  float:right;
-  position:relative;
-  top:18px;
-}
-
-nav {
-  position:relative;
-  top:-200px;
-  background-color:#7EA9C7;
-}
-
-nav ul {
-  float:right;
-}
-
-nav li {
- display: inline;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  display:inline-block;
-  margin: 2px 20px 2px 8px;
-  line-height:34px;
-}
-
-nav a:hover {
- color:#eee;
-}
-
-
-
-
-
-
-/* ==|== non-semantic helper classes ========================================
-   Please define your styles before this section.
-   ========================================================================== */
-
-/* For image replacement */
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
-.ir br { display: none; }
-
-/* Hide from both screenreaders and browsers: h5bp.com/u */
-.hidden { display: none !important; visibility: hidden; }
-
-/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-
-/* Hide visually and from screenreaders, but maintain layout */
-.invisible { visibility: hidden; }
-
-/* Contain floats: h5bp.com/q */
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-
-
-
-/* ==|== media queries ======================================================
-   PLACEHOLDER Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
-
-}
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
-}
-
-
-
-/* ==|== print styles =======================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
-}
-/* ==|== Aimee's added classes for structure ========================================
-   ========================================================================== */
-#main {
-position:relative;
-top:-200px;
-}
-.date {<h2>Last year we raised $30,000</h2>
-  			<h1>Crunchtime Rowathon is a
 float:left;
-color:#FBB040;
-padding-left:2%;
-font-size:220%;
-font-weight:normal;
-margin:0;
-width:20%;
 }
-h2.date {
-font-size: 1.9em;
-margin-left: .25em;
+#top-nav a {
+text-decoration: none;
+color:white;
+border-right: 2px solid white;
+padding-left: 1em;
+padding-right: 1em;
+font-size:90%;
 }
-#email-entry {
-float:right;
+.last-nav {
+border:none;
+padding-right:none;
+}
+#logo {
+width:300px;
+height:100px;
+float:left;
 clear:both;
-width:78%;
-margin-top: 10px;
+margin-top: 40px;
 }
-#email-entry img {
+#top-nav {
+float:right
+}
+#top-nav ul {
+margin-top:3.5em;
+}
+#top-nav li {
+width:100%;
+display:inline;
+text-align: center;
+}
+hgroup {
+width:28%;
+height:350px;
 float:left;
-margin-right:20px;
-margin-left:20px;
+clear:left;
+margin-top:-30px;
+padding-right:1em;
 }
-#email-entry form {
+#container {
+margin-top:200px;
+}
+.slider-wrap {
+float:right;
+width:68.75%;
+height:330px;
+}
+#tabs {
+height:100%;
+width:100%;
 float:left;
-background-color: #FBB040;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px; /* future proofing */
--khtml-border-radius: 10px; /* for old Konqueror browsers */
-margin-left:20px;
-height:75px;
-width:630px;
-margin-top:15px;
 }
-#email-entry h2 {
-width:160px;
+#email-us {
+position:relative;
+width:35%;
+height:60px;
+float:right;
+color:white;
+}
+#email-us img {
 float:left;
-font-size: 130%;
-padding:10px;
-padding-left: 30px;
+width:32px;
 }
-#email-entry ul {
-width:630px;
-height:75px;
+#email-us form {
+float:left;
+font-size:50%;
+width:90%;
+}
+#email-us ul {
+position:relative;
+float:left;
 list-style-type: none;
-margin:0px;
-padding:0px;
+display: inline;
+padding-left:0px;
+margin-top:0;
+font-size:100%;
 }
-#email-entry li {
+#email-us h2 {
+position:relative;
 float:left;
-padding: 10px;
-padding-left:15px;
+width:35%;
+padding:2%;
+padding-top:5%;
 }
-#email-entry li.buttons {
-margin-top:20px;
-}
-#Field1 {
-width:270px;
+#email-us li {
+position:relative;
+float:left;
 }
 #saveForm {
-width:80px;
-}
-#contentSection {
-width:inherit;
-clear:both;
-float:right;
-margin-top: -100px;
+margin-top:32px;
 }
 /* ==|== CSS for slideshow ========================================
    ========================================================================== */
@@ -427,7 +411,8 @@ margin-top: -100px;
 */
 .slider-wrap	{ 
 width: 630px; 
-float: right; 
+float: right;
+z-index: 0;  
 }			
 .stripViewer .panelContainer .panel ul	{ 
 text-align: left; 
@@ -454,7 +439,7 @@ width: 630px;
 display: none; 
 }
 .nav-thumb 									
-{ border: 1px solid black;  
+{ border: 1px solid black; 
 }
 #movers-row	{ 
 margin-top:5px; 
@@ -465,6 +450,7 @@ float:right;
 }
 #movers-row div a.cross-link { 
 float: right; 
+z-index: 0; 
 }
 .photo-meta-data { 
 background: url(images/transpBlack.png); 
@@ -489,8 +475,6 @@ z-index: 9999;
 .active-thumb { 
 background: transparent url(images/icon-uparrowsmallwhite.png) top center no-repeat; 
 }
-
-
 
 /* ==|== CSS for tabs ========================================
    ========================================================================== */
@@ -533,7 +517,74 @@ background: transparent url(images/icon-uparrowsmallwhite.png) top center no-rep
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
 }
+h2 {
+color:white;
+margin-top:1em;
+width:100%;
+height:auto;
+display: block;
+}
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}
 
 
 
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
 
+@media print {
+  * {color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
