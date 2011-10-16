@@ -127,9 +127,27 @@ Email
 <div>
 
 <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"
- /></div>
+ />
+
+<a href="#" class="button submit">Submit</a>
+
+</div>
 </li>
 </ul>
+
+<ul id="ways-to-help" style="display:none">
+  <li><label><input type="checkbox" name="ways-to-help" value="row">I would like to row</label></li>
+  <li>
+    <label><input type="checkbox" name="ways-to-help" value="company">I would like to get my company involved</label>
+    <span class="company-name hidden-for-now"><input name="company-name"></span>
+  </li>
+  <li><label><input type="checkbox" name="ways-to-help" value="rower">I have a rower I would like to donate for the day</label></li>
+  <li>
+    <label><input type="checkbox" name="ways-to-help" value="other">I want to help in other ways</label>
+    <span class="other-help hidden-for-now"><input name="company-name"></span>
+  </li>
+</ul>
+
 </form> 
     		
     	</div>
@@ -277,6 +295,33 @@ Email
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
+  
+  <script>
+$(function() {
+  var $waysToHelp = $("#ways-to-help");
+  var waysOpened = false;
+
+  $("#form2 a.button.submit").click(function(e) {
+    e.preventDefault();
+    var $submit = $(this);
+
+    if (!waysOpened) {
+      $submit.attr("disabled", true);
+      $waysToHelp.slideDown("fast", function() {
+        waysOpened = true;
+        $submit.attr("disabled", false);
+      });
+    } else {
+      var data = $submit.closest("form").serialize();
+      console.log("posting data: ");
+      console.log(data);
+      $waysToHelp.slideUp("fast", function() {
+        $waysToHelp.closest("form").html("<div>Thank you!  You'll hear from us soon</div>")
+      });
+    }
+  });
+});
+  </script>
   
 </body>
 </html>

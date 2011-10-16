@@ -178,6 +178,19 @@ h1.fontface {font: 45px/52px 'CicleGordita', Arial, sans-serif;letter-spacing: 0
 		p.style5 {font: 18px/27px 'CicleSemi', Arial, sans-serif;}
 		p.style6 {font: 18px/27px 'CicleSemiItalic', Arial, sans-serif;}
 		p.style7 {font: 18px/27px 'CicleShadow', Arial, sans-serif;}
+
+
+.hidden-for-now {
+  display:none;
+}
+
+#ways-to-help li {
+  display:list-item;
+  background:#eee;
+  border:1px solid #ccc;
+  color:#444;
+}
+
 		
 /* =============================================================================
    Lists
