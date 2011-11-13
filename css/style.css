@@ -318,7 +318,8 @@ h3 {
 font: 16px/22px 'CicleSemiItalic', Arial, sans-serif;
 }
 h1 {
-margin-bottom:0px;
+padding:0em;
+margin:0em;
 }
 .affiliates {
 float:left;
@@ -531,7 +532,7 @@ background: transparent url(images/icon-uparrowsmallwhite.png) top center no-rep
   z-index: 1;
 }
 h2 {
-color:white;
+color:#F8961F;
 margin-top:1em;
 width:100%;
 height:auto;
