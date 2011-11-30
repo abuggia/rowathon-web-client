@@ -80,20 +80,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/960_12_col.css">
   <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8">
-  <style>
-  body {
-  background-image:url('img/background.jpg');
-  background-repeat:repeat-x;
-  }
-  header {
-position:fixed;
-width:100%;
-top:0px;
-background-image:url("img/background-top.jpg");
-height:180px;
-z-index:100;
-}
-  </style>
+
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 	<link rel="shortcut icon" href="favicon.ico">
   </head>
@@ -101,80 +88,24 @@ z-index:100;
 <body>
 
 <header>
+		<h1 id="logo"><img src="img/logo.png" /></h1>
+		<div id="date"><h3>April XX, 2011</h3></div>
 		<div class="container_12">
-    	<div class="affiliates">
-      		<a href="http://www.crunchtime.com"><img src="img/CrunchTime_Logo.gif" alt="CrunchTime! Information Systems" style="width:80px;height:50px"/></a>
-    		<a href="http://www.childrenshospital.org"><img src="img/ChildrensHospitalBoston.png" alt="Children's Hospital Boston" style="width:120px"/></a>
-    	</div>
+			<nav id="top-nav">
+	    		<ul>
+	    			<li><a id="about" href="#about">about</a></li>
+	    			<li><a id="works" href="#how-it-works">how it works</a></li>
+	    			<li><a id="history" href="#learn-more">learn more</a></li>
+	    			<li><a id="contact" href="#contact">contact</a></li>
+	    		</ul>
+	    	</nav>
     	
-    	
-    	<div id="email-us">
-    		<img src="img/raisinghanddude.png" />
-    		<form id="form2" name="form2" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-action="https://aimeeb.wufoo.com/forms/m7x3w7/#public">
-
-<h2 >How can I help?</h2>
-
-<ul>
-
-<li id="foli1" class="     ">
-<label class="desc" id="title1" for="Field1">
-Email
-</label>
-<div>
-<input id="Field1" name="Field1" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="1" /> 
-</div>
-</li> <li class="buttons ">
-<div>
-
-<input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"
- />
-
-<a href="#" class="button submit">Submit</a>
-
-</div>
-</li>
-</ul>
-
-<ul id="ways-to-help" style="display:none">
-  <li><label><input type="checkbox" name="ways-to-help" value="row">I would like to row</label></li>
-  <li>
-    <label><input type="checkbox" name="ways-to-help" value="company">I would like to get my company involved</label>
-    <span class="company-name hidden-for-now"><input name="company-name"></span>
-  </li>
-  <li><label><input type="checkbox" name="ways-to-help" value="rower">I have a rower I would like to donate for the day</label></li>
-  <li>
-    <label><input type="checkbox" name="ways-to-help" value="other">I want to help in other ways</label>
-    <span class="other-help hidden-for-now"><input name="company-name"></span>
-  </li>
-</ul>
-
-</form> 
-    		
-    	</div>
-    	
-    	
-    	<div class id="logo"><img src="img/logo.png" /></div>
-    	<nav id="top-nav">
-    		<ul>
-    			<li><a href="index.html">home</a></li>
-    			<li><a href="howitworks.html">how it works</a></li>
-    			<li><a href="learnmore.html">learn more</a></li>
-    			<li><a href="contact.html" class="last-nav">contact</a></li>
-    		</ul>
-    	</nav>
-    	</div>
+    	</div><!-- end header wrapper -->
     </header>
 
 
   <div id="container" class="container_12">
     
-        
-    <hgroup>
-    <h2 class="style2">For a great cause.</h2>
-    <h1 class="fontface">For Fun!</h1>
-    <h3 class="style3">Join us April Xx, 2012 for the 5th Annual CrunchTime! Rowathon, raising money for the blood donations center at Children's Hospital.</h3>
-    </hgroup>
 
    <div class="slider-wrap">
 
@@ -193,23 +124,16 @@ Email
                                         <div class="wrapper">
                                                 <img src="img/cheering.jpg" alt="temp">
                                                 <div class="photo-meta-data">
-                                                      Snappy witicism                                                
+                                                                                                    
                                                 </div>
                                         </div>
                                 </div>          
+                             
                                 <div class="panel" title="Panel 3">
-                                        <div class="wrapper">
-                                                
-                                                <img src="img/trackerScreen.jpg" alt="scotch egg" class="floatLeft">
-                                                
-                                        </div>
-                                </div>
-                                <div class="panel" title="Panel 4">
                                         <div class="wrapper">
                                                 <img src="img/cheeringTeam.jpg" alt="temp">
                                                 <div class="photo-meta-data">
-                                                        A Poem by Shel Silverstein<br>
-                                                        <span>Falling Up</span>
+                                                       
                                                 </div>
                                         </div>
                                 </div>
@@ -220,22 +144,68 @@ Email
 		<div id="movers-row">
                 <div><a href="#1" class="cross-link active-thumb"><img src="img/thumb_checkPresentation.jpg" class="nav-thumb" alt="temp-thumb"></a></div>
                         <div><a href="#2" class="cross-link"><img src="img/thumbnail_cheering.jpg" class="nav-thumb" alt="temp-thumb"></a></div>
-                        <div><a href="#3" class="cross-link"><img src="img/thumbnail_trackerScreen.jpg" class="nav-thumb" alt="temp-thumb"></a></div>
                         <div><a href="#4" class="cross-link"><img src="img/thumbnail_cheeringTeam.jpg" class="nav-thumb" alt="temp-thumb"></a></div>
                         
-                </div>
+                </div><!-- end movers-row -->
 
-        </div>
-	<section id="tabs">
+        </div><!-- end sliderwrap -->
+			<div class="affiliates">
+		      		<a href="http://www.crunchtime.com"><img src="img/CrunchTime_Logo.gif" alt="CrunchTime! Information Systems" style="width:80px;height:50px"/></a>
+		    		<a href="http://www.childrenshospital.org"><img src="img/ChildrensHospitalBoston.png" alt="Children's Hospital Boston" style="width:120px"/></a>
+		    	</div><!-- end affiliates -->
+		
+		    	<div id="email-us">
+		    		<form id="form2" name="form2" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+		action="https://aimeeb.wufoo.com/forms/m7x3w7/#public">
+
+		<h2 >How can I help?</h2>
+
+		<ul>
+			<li id="foli1" class="     ">
+		
+				<div>
+				<input id="Field1" name="Field1" type="email" spellcheck="false" class="field text medium" value="email" maxlength="255" tabindex="1" /> 
+				</div>
+			</li> 
+
+			<li class="buttons">
+				<div>
+					<a href="#" class="button submit"><input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit" /></a>
+				</div>
+			</li>
+		</ul>
+
+		<ul id="ways-to-help" style="display:none">
+		  <li><label><input type="checkbox" name="ways-to-help" value="row">I would like to row</label></li>
+		  <li>
+		    <label><input type="checkbox" name="ways-to-help" value="company">I would like to get my company involved</label>
+		    <span class="company-name hidden-for-now"><input name="company-name"></span>
+		  </li>
+		  <li><label><input type="checkbox" name="ways-to-help" value="rower">I have a rower I would like to donate for the day</label></li>
+		  <li>
+		    <label><input type="checkbox" name="ways-to-help" value="other">I want to help in other ways</label>
+		    <span class="other-help hidden-for-now"><input name="company-name"></span>
+		  </li>
+		</ul>
+
+		</form> 
+
+		    	</div><!-- end email us -->     
+<div class="clearfix"></div>
+
+	    <h1 id="headline">Join us April Xx, 2012 for the 5th Annual CrunchTime! Rowathon, raising money for the blood donations center at Children's Hospital.</h1>
+	   
+	<div class="clearfix"></div>
 	
+	<section id="about">
 		<!-- Tabs -->
+		<h1 class="section-header">About</h1>
 		<h2>Welcome</h2>
 		<div class="tabs">
 
    <div class="tab">
        <input type="radio" id="tab-1" name="tab-group-1" checked>
        <label for="tab-1">About</label>
-
        <div class="content">
            The 5th Annual CrunchTime! Rowathon is a fundraiser for the blood donor center at Children's Hospital Boston. On Thursday, April 7th, 2011, CrunchTime! employees will sit down one after another on the rowing machine in the employee lounge and row as hard as they can during their time slots. When they?re done they?ll see how many meters they've rowed, which will help determine how much money they raise. 
        </div>
@@ -244,7 +214,6 @@ Email
    <div class="tab">
        <input type="radio" id="tab-2" name="tab-group-1">
        <label for="tab-2">2011</label>
-
        <div class="content">
            stuff
        </div>
@@ -253,19 +222,29 @@ Email
     <div class="tab">
        <input type="radio" id="tab-3" name="tab-group-1">
        <label for="tab-3">2010</label>
-
        <div class="content">
            stuff
        </div>
    </div>
 
-</div>
-	
-	</section>
-    
-    <footer>
+</div><!-- end tabs div -->
+</section><!-- end about section -->
 
-    </footer>
+<section id="how-it-works">
+<h1 class="section-header">how it works</h1>
+</section><!-- end how-it-works section -->
+    
+<section id="learn-more">
+<h1 class="section-header">Learn More</h1>
+</section><!-- end learn-more section -->
+
+<section id="contact">
+<h1 class="section-header">contact us</h1>
+</section><!-- end contact section -->
+
+<footer>
+
+</footer>
   </div> <!--! end of #container -->
 
 

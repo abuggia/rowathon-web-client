@@ -85,112 +85,6 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
-
-@font-face {
-    font-family: 'CicleFina';
-    src: url('fonts/Cicle_Fina-webfont.eot');
-    src: url('fonts/Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Cicle_Fina-webfont.woff') format('woff'),
-         url('fonts/Cicle_Fina-webfont.ttf') format('truetype'),
-         url('fonts/Cicle_Fina-webfont.svg#CicleFina') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CicleFinaItalic';
-    src: url('fonts/Cicle_Fina_Italic-webfont.eot');
-    src: url('fonts/Cicle_Fina_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Cicle_Fina_Italic-webfont.woff') format('woff'),
-         url('fonts/Cicle_Fina_Italic-webfont.ttf') format('truetype'),
-         url('fonts/Cicle_Fina_Italic-webfont.svg#CicleFinaItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CicleGordita';
-    src: url('fonts/Cicle_Gordita-webfont.eot');
-    src: url('fonts/Cicle_Gordita-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Cicle_Gordita-webfont.woff') format('woff'),
-         url('fonts/Cicle_Gordita-webfont.ttf') format('truetype'),
-         url('fonts/Cicle_Gordita-webfont.svg#CicleGordita') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CicleGorditaItalic';
-    src: url('fonts/Cicle_Gordita_Italic-webfont.eot');
-    src: url('fonts/Cicle_Gordita_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Cicle_Gordita_Italic-webfont.woff') format('woff'),
-         url('fonts/Cicle_Gordita_Italic-webfont.ttf') format('truetype'),
-         url('fonts/Cicle_Gordita_Italic-webfont.svg#CicleGorditaItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CicleSemi';
-    src: url('fonts/Cicle_Semi-webfont.eot');
-    src: url('fonts/Cicle_Semi-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Cicle_Semi-webfont.woff') format('woff'),
-         url('fonts/Cicle_Semi-webfont.ttf') format('truetype'),
-         url('fonts/Cicle_Semi-webfont.svg#CicleSemi') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CicleSemiItalic';
-    src: url('fonts/Cicle_Semi_Italic-webfont.eot');
-    src: url('fonts/Cicle_Semi_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Cicle_Semi_Italic-webfont.woff') format('woff'),
-         url('fonts/Cicle_Semi_Italic-webfont.ttf') format('truetype'),
-         url('fonts/Cicle_Semi_Italic-webfont.svg#CicleSemiItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'CicleShadow';
-    src: url('fonts/Cicle_Shadow-webfont.eot');
-    src: url('fonts/Cicle_Shadow-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Cicle_Shadow-webfont.woff') format('woff'),
-         url('fonts/Cicle_Shadow-webfont.ttf') format('truetype'),
-         url('fonts/Cicle_Shadow-webfont.svg#CicleShadow') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-h1.fontface {font: 45px/52px 'CicleGordita', Arial, sans-serif;letter-spacing: 0;color:#f8961f}
-
-		p.style1 {font: 18px/27px 'CicleFina', Arial, sans-serif;}
-		p.style2 {font: 18px/27px 'CicleFinaItalic', Arial, sans-serif;}
-		p.style3 {font: 18px/27px 'CicleGordita', Arial, sans-serif;}
-		p.style4 {font: 18px/27px 'CicleGorditaItalic', Arial, sans-serif;}
-		p.style5 {font: 18px/27px 'CicleSemi', Arial, sans-serif;}
-		p.style6 {font: 18px/27px 'CicleSemiItalic', Arial, sans-serif;}
-		p.style7 {font: 18px/27px 'CicleShadow', Arial, sans-serif;}
-
-
-.hidden-for-now {
-  display:none;
-}
-
-#ways-to-help li {
-  display:list-item;
-  background:#eee;
-  border:1px solid #ccc;
-  color:#444;
-}
-
 		
 /* =============================================================================
    Lists
@@ -294,7 +188,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
 /* Colors for form validity */
 input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
+input:invalid, textarea:invalid {  }
 
 
 /* =============================================================================
@@ -309,13 +203,48 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
+    /*body {
+                background-image:url('img/background.jpg');
+                background-repeat:repeat-x;
+                }*/
+header {
+  position:fixed;
+  width:100%;
+  top:0px;
+background-color:#333;
+  height:4em;
+  z-index:100;
+  }
+
 body {
- font: 18px/27px 'CicleFina', Arial, sans-serif;
-background:url("img/background.jpg");
-background-repeat: repeat-x;
+ font: 16px/1.5 'CabinRegular', Arial, sans-serif;
+position:relative;
+color:#333;
+/*background:url("img/background.jpg");
+background-repeat: repeat-x;*/
+/*background-image: linear-gradient(bottom, rgb(255,252,255) 0%, rgb(106,173,207) 80%);
+background-image: -o-linear-gradient(bottom, rgb(255,252,255) 0%, rgb(106,173,207) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(255,252,255) 0%, rgb(106,173,207) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,252,255) 0%, rgb(106,173,207) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(255,252,255) 0%, rgb(106,173,207) 80%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(255,252,255)),
+	color-stop(0.8, rgb(106,173,207))
+);*/
+}
+h1 {
+	font-size:3em;
+}
+h2 {
+	font-size:2.2em;
+	margin-top:0em;
 }
 h3 {
-font: 16px/22px 'CicleSemiItalic', Arial, sans-serif;
+	font-size:1.4em;
 }
 h1 {
 padding:0em;
@@ -326,49 +255,77 @@ float:left;
 }
 #top-nav a {
 text-decoration: none;
-color:white;
-border-right: 2px solid white;
-padding-left: 1em;
-padding-right: 1em;
-font-size:90%;
+padding-left: 2em;
+text-transform:uppercase;
+font-family:'CabinBold';
+text-shadow: 1px 1px #106A6A,
+				 2px 2px #106A6A;
+color:#2dd;
 }
-.last-nav {
-border:none;
-padding-right:none;
+#top-nav a:hover {
+	color:#106a6a;
+	text-shadow:1px 1px #2dd;
 }
+/*a#about {
+	color:#4E6;
+}
+a#works {
+	color:#3D8;
+}
+a#history {
+	color:#3FC;
+}
+a#contact {
+	color:#2DD;
+}*/
 #logo {
-width:300px;
-height:100px;
-float:left;
+position:fixed;
 clear:both;
-margin-top: 40px;
+top:2em;
+background-color:yellow;
+}
+#logo img {
+	padding:2% 2% 2% 52%;
+}
+#date {
+position:fixed;
+clear:both;
+top:12em;
+background-color:#333;
+color:#5fbe7c;
+}
+#date h3 {
+	padding:.5em .5em .5em 62.5%;
+	margin:0em;
+	font-weight:normal;
+	font-size:1.4em;
 }
 #top-nav {
 float:right
 }
 #top-nav ul {
-margin-top:3.5em;
+margin-top:1em;
 }
 #top-nav li {
 width:100%;
 display:inline;
 text-align: center;
 }
-hgroup {
-width:28%;
-height:350px;
+
+h1#headline {
+clear:both;
 float:left;
-clear:left;
-margin-top:-30px;
-padding-right:1em;
+margin-top:3em;
+line-height:1.3em;
+font-weight:normal;
 }
 #container {
-margin-top:200px;
+margin-top:4em;
 }
 .slider-wrap {
 float:right;
 width:68.75%;
-height:330px;
+height:16em;
 }
 #tabs {
 height:100%;
@@ -377,18 +334,13 @@ float:left;
 }
 #email-us {
 position:relative;
-width:35%;
-height:60px;
+width:25%;
+height:5em;
 float:right;
 color:white;
 }
-#email-us img {
-float:left;
-width:32px;
-}
 #email-us form {
-float:left;
-font-size:50%;
+float:right;
 width:90%;
 }
 #email-us ul {
@@ -400,19 +352,42 @@ padding-left:0px;
 margin-top:0;
 font-size:100%;
 }
-#email-us h2 {
+#email-us h2, ul {
 position:relative;
 float:left;
-width:35%;
-padding:2%;
-padding-top:5%;
+color:yellow;
+font-family:'CabinItalic';
+margin:0;
+font-weight:normal;
 }
 #email-us li {
 position:relative;
 float:left;
+margin-bottom:.5em;
+}
+ul#ways-to-help {
+	padding:1em;
+	background-color:black;
 }
 #saveForm {
-margin-top:32px;
+	color:#333;
+	border:none;
+	background-color:yellow;
+	padding:.5em;
+}
+a {
+	text-decoration:none;
+}
+h1.section-header {
+	margin-top:1.5em;
+	padding:0 .25em .4em 0em;
+	border-top:5px solid #106a6a;
+	text-transform:uppercase;
+	font-family:'CabinBold';
+	text-shadow: 1px 1px #2dd,
+					 2px 2px #2dd,
+					3px 3px #2dd;
+	color:#106a6a;
 }
 /* ==|== CSS for slideshow ========================================
    ========================================================================== */
@@ -424,8 +399,7 @@ margin-top:32px;
 	SLIDER
 */
 .slider-wrap	{ 
-width: 630px; 
-float: right;
+width:100%;
 z-index: 0;  
 }			
 .stripViewer .panelContainer .panel ul	{ 
@@ -435,11 +409,10 @@ margin: 0 15px 0 30px;
 .stripViewer { 
 position: relative; 
 overflow: hidden; 
-width: 630px;  
-height: 250px; 
+height: 400px; 
 }
 .stripViewer .panelContainer { 
-position: relative; 
+position: absolute; 
 left: 0; 
 top: 0; 
 }
@@ -447,7 +420,7 @@ top: 0;
 float: left; 
 height: 100%; 
 position: relative; 
-width: 630px; 
+
 }
 .stripNavL, .stripNavR, .stripNav { 
 display: none; 
@@ -455,11 +428,14 @@ display: none;
 .nav-thumb 									
 { border: 1px solid black; 
 }
+#main-photo-slider img {
+	width:100%;
+}
 #movers-row	{ 
 margin-top:5px; 
 }
 #movers-row div { 
-width: 13%; 
+padding-left:.5em; 
 float:right;
 }
 #movers-row div a.cross-link { 
@@ -531,13 +507,14 @@ background: transparent url(images/icon-uparrowsmallwhite.png) top center no-rep
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
 }
-h2 {
+
+/*h2 {
 color:#F8961F;
 margin-top:1em;
 width:100%;
 height:auto;
 display: block;
-}
+}*/
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
